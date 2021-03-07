@@ -1,2 +1,3 @@
 # rsschool-cv
-educational projects
+educational projects<br>
+https://geowashto.github.io/rsschool-cv/cv
