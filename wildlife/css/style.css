@@ -1,0 +1,348 @@
+html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+.main {
+    height: 1vh;
+    min-height: 49rem;
+    width: 100%;
+    background: url(../assets/Rectangle.png) no-repeat center;
+    background-color: #02160b;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 84%;
+}
+
+
+/*Header*/
+
+.header {
+    margin-top: 1.9rem;
+    display: flex;
+    justify-content: space-between;
+    height: 3.75rem;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 21%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    line-height: 3.75rem;
+    text-transform: uppercase;
+}
+
+.menu {
+    width: 50%;
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.menu_link {
+    font-size: 1.45rem;
+    line-height: 3.75rem;
+    color: white;
+    text-decoration: none;
+    margin: 1.5rem;
+}
+
+.menu_link:hover {
+    color: #cd6326;
+}
+
+.menu_icon:hover {
+    transform: rotate(90deg)
+}
+
+.get_started_btn {
+    border: 2px solid #cd6326;
+    padding: 0.65rem 1.9rem;
+    border-radius: 5px;
+    font-family: "Roboto", sans-serif;
+    transition-duration: 0.4s;
+}
+
+.get_started_btn:hover {
+    background-color: #cd6326;
+    color: white;
+}
+
+.get_started_btn:active {
+    background-color: #8f5613;
+    color: white;
+}
+
+
+/*Survival*/
+
+.survival {
+    display: block;
+    width: 25%;
+    margin-top: 10rem;
+    color: white;
+}
+
+.survival_title {
+    font-size: 1.8rem;
+    color: #cd6326;
+    letter-spacing: 2px;
+}
+
+.survival_content {
+    margin-top: 3.1rem;
+    font-size: 1.15rem;
+}
+
+.survival_btn {
+    margin: 3.5rem 0;
+}
+
+.donate_btn {
+    padding: 1.25rem 3rem;
+    border-radius: 5px;
+    background-color: #cd6326;
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.45rem;
+    transition-duration: 0.4s;
+}
+
+.donate_btn:hover {
+    background-color: #e39128;
+}
+
+.donate_btn:active {
+    background-color: #8f5613;
+}
+
+
+/*Latest articles*/
+
+.news {
+    width: 100%;
+    min-height: 49rem;
+    background-color: #cccccc;
+    display: flex;
+    justify-content: center;
+}
+
+.latestarticles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.latestarticles_text {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.latestarticles_text_title {
+    color: #333333;
+    font-size: 3rem;
+    line-height: 4.5rem;
+}
+
+.latestarticles_text_title_decoration {
+    letter-spacing: 3px;
+}
+
+.latestarticles_text_content {
+    margin-bottom: 7rem;
+}
+
+.latestarticles_text_content_decoration {
+    color: #666666;
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+}
+
+
+/*Carousel start*/
+
+.carousel {
+    position: relative;
+    width: 1140px;
+    padding: 10px 40px;
+}
+
+.carousel img {
+    width: 300px;
+    height: 360px;
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 150px;
+    padding: 0;
+    background: #cccccc;
+    border: 0;
+    font-size: 35px;
+    line-height: 35px;
+    color: #666666;
+    display: block;
+}
+
+.arrow:hover {
+    color: #cd6326;
+    cursor: pointer;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 7px;
+}
+
+.gallery {
+    width: 1140px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 360px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+}
+
+.gallery li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+
+/*Carousel finish*/
+
+
+/*text below the carousel*/
+
+.latestarticles_ads {
+    margin-top: 15rem;
+}
+
+.latestarticles_ads_decoration {
+    font-size: 1.7rem;
+    color: #333333;
+}
+
+
+/*Get notified form*/
+
+.get_notified {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.75rem;
+    margin-bottom: 15rem;
+}
+
+.subscribe {
+    width: 100%;
+    max-width: 41.25rem;
+    display: flex;
+}
+
+.subscribe_input {
+    width: 80%;
+    height: 3.55rem;
+    background: white;
+    border: 1px solid #666666;
+    border-right: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.45rem;
+    color: black;
+    line-height: 1.6rem;
+}
+
+.subscribe_input:focus {
+    outline: 0;
+    border-color: #cd6326;
+}
+
+.subscribe_input::placeholder {
+    color: #666666;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.45rem;
+    padding-left: 10px;
+}
+
+.subscribe_btn {
+    width: 20%;
+    padding: 0.65rem 1.9rem;
+    height: 3.75rem;
+    background-color: #cd6326;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.45rem;
+    color: white;
+    line-height: 1.7rem;
+    border: 0;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.subscribe_btn:hover {
+    background-color: #e39128;
+}
+
+.subscribe_btn:focus {
+    outline: 0;
+    background-color: #8f5613;
+}
+
+
+/*Footer*/
+
+.footer {
+    min-height: 22.5rem;
+    width: 100%;
+    background: url(../assets/Rectangle_footer.jpg) no-repeat center;
+    background-color: #181617;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_wrap {
+    margin-top: 9.3rem;
+    display: flex;
+    justify-content: space-between;
+    height: 3.75rem;
+    align-items: center;
+    width: 100%;
+}
+
+
+/*Social networks*/
+
+.footer_social {
+    margin: auto;
+}
