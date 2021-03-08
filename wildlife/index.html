@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Wild Life</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="container">
+            <!--Header-->
+            <div class="header ">
+                <div class="logo ">
+                    <img src="./assets/path0.png " alt="Logo ">
+                    <h1 class="brand">Wildlife</h1>
+                </div>
+
+                <div class="menu visible-lg">
+                    <ul>
+                        <li><a href="# " class="menu_link ">Blog</a></li>
+                        <li><a href="# " class="menu_link ">Contacts</a></li>
+                        <li>
+                            <a href="# " class="menu_link "><img class="menu_icon" src="./assets/Vector.png" alt="Search"></a>
+                        </li>
+                        <li> <a href="# " class="get_started_btn menu_link ">Sign in</a></li>
+                    </ul>
+                </div>
+                <!--Survival-->
+            </div>
+            <div class="survival">
+                <div class="survival_title">
+                    <h1>Survival</h1>
+                </div>
+                <div class="survival_content">
+                    <p>What this means is that we exist to help protect our enviroment and do in numbers of ways. You can save the planet by donation
+                    </p>
+                </div>
+                <div class="survival_btn"><a href="#" class="donate_btn">Donate</a></div>
+            </div>
+        </div>
+
+    </div>
+    <!--Latest articles-->
+    <div class="news">
+        <div class="container">
+            <div class="latestarticles">
+                <div class="latestarticles_text">
+                    <div class="latestarticles_text_title">
+                        <h2 class="latestarticles_text_title_decoration">Latest articles</h2>
+                    </div>
+                    <div class="latestarticles_text_content">
+                        <p class="latestarticles_text_content_decoration">Breaking news from the wild</p>
+                    </div>
+                </div>
+
+                <!--Courusel start-->
+                <div class="latestarticles_carousel">
+                    <div id="carousel" class="carousel">
+                        <button class="arrow prev"><</button>
+                        <div class="gallery">
+                            <ul class="images">
+                                <li><img src="./assets/Rectangle_1.jpg"></li>
+                                <li><img src="./assets/Rectangle_2.jpg"></li>
+                                <li><img src="./assets/Rectangle_3.jpg"></li>
+                                <li><img src="./assets/Rectangle_1.jpg"></li>
+                                <li><img src="./assets/Rectangle_2.jpg"></li>
+                                <li><img src="./assets/Rectangle_3.jpg"></li>
+                            </ul>
+                        </div>
+                        <button class=" arrow next ">></button>
+                    </div>
+
+                </div>
+
+                <!--Courusel finish-->
+
+                <div class="latestarticles_ads">
+                    <p class="latestarticles_ads_decoration">Get notified about new amazing articles</p>
+                </div>
+
+            </div>
+            <!--Get notified form-->
+            <div class="get_notified ">
+                <form class="subscribe" action="/" method="POST">
+                    <input class="subscribe_input" type="email" name="name" placeholder="Email...">
+                    <button class="subscribe_btn" type="submit">Send</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+
+        <div class="container">
+
+            <div class="footer_wrap">
+
+                <div class="logo ">
+                    <img src="./assets/path0.png " alt="Logo ">
+                    <h1 class="brand">Wildlife</h1>
+                </div>
+
+                <div class="menu visible-lg">
+                    <ul>
+                        <li><a href="# " class="menu_link ">Articles</a></li>
+                        <li><a href="# " class="menu_link ">About us</a></li>
+                        <li><a href="# " class="menu_link ">Learn more</a></li>
+                    </ul>
+                </div>
+                <!--Social networks-->
+                <div class="footer_social">
+                    <div class="menu icons">
+                        <ul>
+                            <li>
+                                <a href="# " class="menu_link "><img class="menu_icon" src="./assets/fb.png"></a>
+                            </li>
+                            <li>
+                                <a href="# " class="menu_link "><img class="menu_icon" src="./assets/inst.png"></a>
+                            </li>
+                            <li>
+                                <a href="# " class="menu_link "><img class="menu_icon" src="./assets/pntr.png"></a>
+                            </li>
+                            <li>
+                                <a href="# " class="menu_link "><img class="menu_icon" src="./assets/tgr.png"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        /* этот код помечает картинки, для удобства разработки 
+                                let i = 1;
+                                for (let li of carousel.querySelectorAll('li')) {
+                                    li.style.position = 'relative';
+                                    li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0 ">${i}</span>`);
+                                    i++;
+                                }*/
+
+        /* конфигурация */
+        let width = 300; // ширина картинки
+        let count = 3; // видимое количество изображений
+
+        let list = carousel.querySelector('ul');
+        let listElems = carousel.querySelectorAll('li');
+
+        let position = 0; // положение ленты прокрутки
+
+        carousel.querySelector('.prev').onclick = function() {
+            // сдвиг влево
+            position += width * count;
+            // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
+            position = Math.min(position, 0)
+            list.style.marginLeft = position + 'px';
+        };
+
+        carousel.querySelector('.next').onclick = function() {
+            // сдвиг вправо
+            position -= width * count;
+            // последнее передвижение вправо может быть не на 3, а на 2 или 1 элемент
+            position = Math.max(position, -width * (listElems.length - count));
+            list.style.marginLeft = position + 'px';
+        };
+    </script>
+</body>
+
+</html>
