@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Shippori+Mincho:wght@500;600;700&display=swap');
+body {
+    font-family: 'Lato';
+    font-size: 16px;
+    color: #6e6e6e;
+}
+
+header {
+    width: 100%;
+}
+
+
+/*Contacts block*/
+
+.first {
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    padding-left: 1.5rem;
+}
+
+.first_name {
+    width: 50%;
+    line-height: 2.5rem;
+}
+
+.first_mail {
+    width: 25%;
+    color: #ff9600;
+    line-height: 2.5rem;
+}
+
+.first_phone {
+    width: 25%;
+    line-height: 2.5rem;
+}
+
+
+/*Title block*/
+
+.second {
+    height: 5rem;
+    background-color: #ff9600;
+    display: flex;
+    justify-content: space-between;
+}
+
+.second_left {
+    height: 5rem;
+    width: 49.5%;
+    background-color: #6e6e6e;
+    text-align: center;
+    color: white;
+    font-size: 3.2rem;
+}
+
+.second_right {
+    height: 5rem;
+    width: 49.5%;
+    background-color: #6e6e6e;
+    text-align: center;
+    color: white;
+    font-size: 3.2rem;
+}
+
+
+/*Summary block*/
+
+main {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.third {
+    font-size: 1.1rem;
+    line-height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.third_left {
+    width: 75%;
+}
+
+.third_right {
+    width: 25%;
+}
+
+.third_left_status {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third_left_field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third_left_tech {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third_left_loves {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third_left_markers {
+    width: 25%;
+    padding-left: 1.2rem;
+    color: #ff9600;
+}
+
+.third_left_content {
+    width: 75%;
+}
+
+
+/*Experience and Education blocks*/
+
+.forth_orangestring {
+    width: 100%;
+    padding-left: 1.3rem;
+    height: 2.5rem;
+    background-color: #ff9600;
+    font-size: 2rem;
+    color: #6e6e6e;
+}
+
+.forth_experience {}
+
+.forth_experience_position {
+    border-bottom: solid 2px #6e6e6e;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+}
+
+.forth_experience_position_left {
+    width: 25%;
+    color: #6e6e6e;
+}
+
+.forth_experience_position_center {
+    width: 50%;
+    font-weight: bold;
+}
+
+.forth_experience_position_right {
+    width: 25%;
+    color: #ff9600;
+}
+
+.forth_experience_duties {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.forth_experience_duties_left {
+    width: 25%;
+}
+
+.forth_experience_duties_center {
+    width: 75%;
+}
+
+.forth_experience_duties_center_lowe {
+    line-height: 2rem;
+}
+
+
+/*Footer*/
+
+.footer_first {
+    height: 2.5rem;
+    background-color: #6e6e6e;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    color: #ff9600;
+    padding-left: 1.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    html {
+        font-size: 12px;
+    }
+    .second {
+        height: 3rem;
+    }
+    .second_left {
+        height: 3rem;
+        font-size: 2rem;
+    }
+    .second_right {
+        height: 3rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 767px) {
+    html {
+        font-size: 8px;
+    }
+    .second {
+        height: 3rem;
+    }
+    .second_left {
+        height: 3rem;
+        font-size: 2rem;
+    }
+    .second_right {
+        height: 3rem;
+        font-size: 2rem;
+    }
+}
